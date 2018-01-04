@@ -48,7 +48,7 @@ describe('render', function(){
     dispatch({type: 'ADD_PET', pet: {name: 'Splash', species: 'Turtle', id: 100}})
     render()
     let container = document.getElementById('container')
-    expect(container.innerHTML).toEqual('<ul><li>Splash</li></ul>')
+    expect(container.innerHTML).toEqual('<ul><li>Splash;</li></ul>')
   })
 })
 
@@ -62,6 +62,6 @@ describe('dispatch with render', function(){
 
     reducer.dispatch({type: 'ADD_PET', pet: {name: 'Splash', species: 'Turtle', id: 100}})
     let container = document.getElementById('container')
-    expect(container.innerHTML).toEqual('<ul><li>Splash</li></ul>')
+    expect(container.innerHTML).toEqual('<ul><li>Splash;</li></ul>')
   })
 })
