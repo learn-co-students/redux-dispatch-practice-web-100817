@@ -29,7 +29,5 @@ export function render() {
       return `<li>${pet.name}</li>`;
     })
     .join(" ");
-  console.log("petlist", petsList);
   container.innerHTML = `<ul>${petsList}</ul>`;
-  console.log("container", container, container.innerHTML);
 }
